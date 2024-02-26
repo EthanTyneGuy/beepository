@@ -1,17 +1,19 @@
 #include <iostream>
 
-int Main() {
+using namespace std;
+
+int main() {
     //establishing da things, baby
     int batAvgNum = 8;
     double averages[8];
     double sum;
-    double minAvg = 0;
+    double minAvg = 100000000;
     double maxAvg = 0;
     double trueAvg;
 
     for (int yas = 0; yas < batAvgNum; ++yas) {
-        std::cout << "Enter a batting average:" << std::endl;
-        std::cin >> averages[yas];
+        cout << "Enter a batting average:" << endl;
+        cin >> averages[yas];
         sum += averages[yas];
         //slay queen
         //the insomnia is going to kill me
@@ -29,16 +31,16 @@ int Main() {
         }
     }
     // i dont know how tedious im making this on myself
-    trueAvg = sum/averages;
+    trueAvg = sum/batAvgNum;
 
     for (int yas = 0; yas < batAvgNum; ++yas) {
-        std::cout << "averages[" << i << "] is: " << averages[yas] << std::endl;
+        cout << "averages[" << yas << "] is: " << averages[yas] << endl;
     }
 
     //final finishing this nightmare and going to sleep hopefully if it works this time
-    std::cout << "Minimum batting average is " << minAvg << std::endl;
-    std::cout << "Maximum batting average is " << maxAvg << std::endl;
-    std::cout << "Average batting average is " << trueAvg << std::endl;
+    cout << "Minimum batting average is " << minAvg << endl;
+    cout << "Maximum batting average is " << maxAvg << endl;
+    cout << "Average batting average is " << trueAvg << endl;
     
 
     return 0;
