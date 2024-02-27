@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//ithought main was supposed to start capital
 int main() {
     //establishing da things, baby
     int batAvgNum = 8;
