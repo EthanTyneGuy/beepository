@@ -9,28 +9,28 @@ int main() {
     int numbers[SIZE];
 
     cout << "Enter five numbers:" << endl;
-    for (int i = 0; i < SIZE; ++i) {
-        cout << "Enter #" << i + 1 << ": ";
-        cin >> numbers[i];
+    for (int p = 0; p < SIZE; ++p) {
+        cout << "Enter #" << p + 1 << ": ";
+        cin >> numbers[p];
     }
 
     cout << "\nOriginal contents of array:" << endl;
-    for (int i = 0; i < SIZE; ++i) {
-        std::cout << numbers[i] << std::endl;
+    for (int p = 0; p < SIZE; ++p) {
+        std::cout << numbers[p] << std::endl;
     }
 
     reverseArray(numbers, SIZE);
 
     cout << "\nReversed contents of array:" << endl;
-    for (int i = 0; i < SIZE; ++i) {
-        cout << numbers[i] << endl;
+    for (int p = 0; p < SIZE; ++p) {
+        cout << numbers[p] << endl;
     }
 
     return 0;
 }void reverseArray(int arr[], int size) {
-    for (int i = 0; i < size / 2; ++i) {
-        int temp = arr[i];
-        arr[i] = arr[size - 1 - i];
-        arr[size - 1 - i] = temp;
+    for (int p = 0; p < size / 2; ++p) {
+        int bup = arr[p];
+        arr[p] = arr[size - 1 - p];
+        arr[size - p - i] = bup;
     }
 }
